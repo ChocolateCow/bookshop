@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книжный магазин</title>
+    <meta name="description" content="Каталог книжного магазина: шесть книг с авторами и ценами.">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+
+    <header>
+        <h1>Книжный магазин</h1>
+        <nav>
+            <a href="index.html">Каталог</a>
+            <a href="checkout.html">Заказ</a>
+            <a href="contacts.html">Контакты</a>
+        </nav>
+    </header>
+
+    <main>
+        <form method="get">
+            <label for="search">Поиск по каталогу</label>
+            <input type="search" name="q" id="search" placeholder="название или автор">
+            <button class="btn" type="submit">Найти</button>
+        </form>
+
+        <section>
+            <h2>Каталог книжек</h2>
+            <article>
+                <img src="img/lvpg.jpg" alt="обложка лвпг" width="100" height="149">
+                <h2>Лето в пионерском галстуке</h2>
+                <p>Автор: не помню</p>
+                <p class="price">Цена: 600 руб.</p>
+                <a href="pages/book.html">Подробнее</a>
+            </article>
+            <article>
+                <img src="img/ochml.jpg" alt="обложка очмл" width="100" height="151" loading="lazy">
+                <h2>О чём молчит ласточка</h2>
+                <p>Автор: не помню</p>
+                <p class="price">Цена: 650 руб.</p>
+                <a href="pages/book.html">Подробнее</a>
+            </article>
+            <article>
+                <img src="img/prestp.jpg" alt="обложка Преступление и наказание" width="100" height="156" loading="lazy">
+                <h2>Преступление и наказание</h2>
+                <p>Автор: Фёдор Достоевский</p>
+                <p class="price">Цена: 500 руб.</p>
+                <a href="pages/book.html">Подробнее</a>
+            </article>
+            <article>
+                <img src="img/master.jpg" alt="обложка мастер и маргартика" width="100" height="156" loading="lazy">
+                <h2>Мастер и маргартика</h2>
+                <p>Автор: Булгаков</p>
+                <p class="price">Цена: 567 руб.</p>
+                <a href="pages/book.html">Подробнее</a>
+            </article>
+            <article>
+                <img src="img/pushkin.jpg" alt="Евгений Онегин пушкина" width="100" height="145" loading="lazy">
+                <h2>Евгений Онегин</h2>
+                <p>Автор: Пушкин</p>
+                <p class="price">Цена: 567 руб.</p>
+                <a href="pages/book.html">Подробнее</a>
+            </article>
+            <article>
+                <img src="img/mertvi.jpg" alt="мёртвые души обложка" width="100" height="158" loading="lazy">
+                <h2>Мёртвые души</h2>
+                <p>Автор: Мёртваядуша Гоголя</p>
+                <p class="price">Цена: 567 руб.</p>
+                <a href="pages/book.html">Подробнее</a>
+            </article>
+        </section>
+    </main>
+     <footer>
+        <p>у меня специальный выбор книг</p>
+    </footer>
+</body>
+</html>
