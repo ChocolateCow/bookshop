@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа</title>
+    <meta name="description" content="Оформление заказа в книжном магазине: данные получателя, способ получения и состав заказа.">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+
+    <header>
+        <h1>Книжный магазин</h1>
+        <nav>
+            <a href="index.html">Каталог</a>
+            <a href="checkout.html">Заказ</a>
+            <a href="contacts.html">Контакты</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Оформление заказа</h2>
+            <form method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" placeholder="заварюка кофейкуковна" autocomplete="name" minlength="2" required>
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" placeholder="88005553535" autocomplete="tel" pattern="[0-9+\s()]{10,18}" required>
+                <label for="email">Почта:</label>
+                <input type="email" id="email" name="email" placeholder="test@pipupu.com" autocomplete="email" required>
+
+                <fieldset>
+                    <legend>Способ получения</legend>
+                    <input type="radio" id="courier" name="delivery" value="courier" checked>
+                    <label for="courier">Курьером</label>
+                    <input type="radio" id="pickup" name="delivery" value="pickup">
+                    <label for="pickup">Самовывоз</label>
+
+                    <label for="comment">Комментарий: </label>
+                    <textarea name="comment" id="comment" rows="4" cols="30" placeholder="например: не стучать, злая собака"></textarea>
+                    <button class="btn" type="submit">Оформить заказ</button>
+                </fieldset>
+            </form>
+            <aside>
+                <h2>Ваш заказ</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Книга</th>
+                            <th>Кол-во</th>
+                            <th>Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Онегин</th>
+                            <th>1</th>
+                            <th>567 руб.</th>
+                        </tr>
+                        <tr>
+                            <th>лвпг</th>
+                            <th>3</th>
+                            <th>600 руб.</th>
+                        </tr>
+                        <tr>
+                            <th>очмл</th>
+                            <th>1</th>
+                            <th>560 руб.</th>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th scope="row" colspan="2">Итого</th>
+                            <td>1567 руб.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </aside>
+        </section>
+        <p><a href="index.html">Вернуться в каталог</a></p>
+    </main>
+    <footer>я это ненавижу</footer>
+</body>
+</html>
